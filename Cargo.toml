@@ -1,0 +1,16 @@
+[package]
+name = "agent-homeostasis"
+version = "0.1.0"
+edition = "2024"
+description = "Homeostatic control for AI agent systems — keeping agents in their operating envelope through feedback loops"
+license = "MIT"
+repository = "https://github.com/SuperInstance/agent-homeostasis"
+keywords = ["ai", "agent", "homeostasis", "pid", "control"]
+categories = ["science", "algorithms"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+anyhow = "1"
+
+[dev-dependencies]
+# None — PID implemented from scratch
