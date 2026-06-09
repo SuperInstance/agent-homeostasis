@@ -20,7 +20,7 @@ fn main() {
     let output = pid.compute(error);
     println!("  Error: {:.1}", error);
     println!("  PID → P={:.2} I={:.2} D={:.2} total={:.2}", 
-        output.p, output.i, output.d, output.output);
+        output.p_term, output.i_term, output.d_term, output.output);
     println!();
 
     // Part 2: Setpoint — ideal operating ranges
@@ -36,8 +36,8 @@ fn main() {
     let mut gauge = Gauge::new("cpu", 65.0, sp);
     gauge.record(70.0);
     gauge.record(55.0);
-    println!("  Gauge '{}': healthy={}, low={}, high={}", 
-        gauge.name(), gauge.is_healthy(), gauge.is_low(), gauge.is_high());
+    println!("  Gauge: healthy={}, low={}, high={}", 
+        gauge.is_healthy(), gauge.is_low(), gauge.is_high());
     println!("  Satisfaction: {:.2}", gauge.satisfaction());
     println!("  Rate of change: {:.2}", gauge.rate_of_change());
     println!();
