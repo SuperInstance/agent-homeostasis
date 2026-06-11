@@ -1,7 +1,7 @@
 [package]
 name = "agent-homeostasis"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 description = "Homeostatic control for AI agent systems — keeping agents in their operating envelope through feedback loops"
 license = "MIT"
 repository = "https://github.com/SuperInstance/agent-homeostasis"
